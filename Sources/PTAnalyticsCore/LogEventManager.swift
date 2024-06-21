@@ -6,13 +6,19 @@
 //
 
 import Foundation
-import FirebaseAnalytics
 
 public class LogEventManager {
-    public static func logEvent(name: String, params: [String: Any]? = nil) {
-        #if os(iOS)
-        Analytics.logEvent(name, parameters: params)
-        #endif
+    public static let shared = LogEventManager()
+
+    private var eventLogger: EventLogger?
+
+    private init() {}
+
+    public func configure(logger: EventLogger) {
+        self.eventLogger = logger
     }
-    
+
+    public func logEvent(name: String, params: [String: Any]? = nil) {
+        eventLogger?.logEvent(name: name, params: params)
+    }
 }
