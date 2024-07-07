@@ -7,7 +7,7 @@
 
 import Foundation
 
-public actor LogEventManager {
+public class LogEventManager {
     public static let shared = LogEventManager()
 
     private var eventLogger: EventLogger?
