@@ -15,7 +15,8 @@ struct PTAnalyticsCoreAppApp: App {
             ContentView()
                 .onAppear {
                     LogEventManager.shared.configure(logger: TestEventLogger())
-                    LogEventManager.logTest(prefix: "123")
+                    PTEventLogger.logTest(prefix: "123")
+//                    LogEventManager.shared.logEvent(name: "123")
                 }
         }
     }
@@ -28,8 +29,8 @@ class TestEventLogger: EventLogger {
 }
 
 @MainActor
-extension LogEventManager {
+class PTEventLogger {
     public static func logTest(prefix: String) {
-        shared.logEvent(name: prefix)
+        LogEventManager.shared.logEvent(name: prefix)
     }
 }
