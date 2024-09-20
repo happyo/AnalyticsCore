@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "PTAnalyticsCore",
+    name: "AnalyticsCore",
     platforms: [
         .iOS(.v16),
         .macOS(.v13)
@@ -12,20 +12,20 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "PTAnalyticsCore",
-            targets: ["PTAnalyticsCore"])
+            name: "AnalyticsCore",
+            targets: ["AnalyticsCore"])
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "PTAnalyticsCore",
+            name: "AnalyticsCore",
             resources: [
                 .process("Resources") // 指定资源目录
             ]
         ),
         .testTarget(
-            name: "PTAnalyticsCoreTests",
-            dependencies: ["PTAnalyticsCore"])
+            name: "AnalyticsCoreTests",
+            dependencies: ["AnalyticsCore"])
     ]
 )
