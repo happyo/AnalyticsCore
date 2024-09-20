@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import PTAnalyticsCore
+import AnalyticsCore
 
 @main
 struct PTAnalyticsCoreAppApp: App {

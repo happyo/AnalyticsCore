@@ -11,7 +11,7 @@
 		214735112C10AEFD000D0E14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214735102C10AEFD000D0E14 /* ContentView.swift */; };
 		214735132C10AEFF000D0E14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 214735122C10AEFF000D0E14 /* Assets.xcassets */; };
 		214735162C10AEFF000D0E14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 214735152C10AEFF000D0E14 /* Preview Assets.xcassets */; };
-		2147351E2C10AF13000D0E14 /* PTAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2147351D2C10AF13000D0E14 /* PTAnalyticsCore */; };
+		6EAB99C22C9D6329000EC94A /* AnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6EAB99C12C9D6329000EC94A /* AnalyticsCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2147351E2C10AF13000D0E14 /* PTAnalyticsCore in Frameworks */,
+				6EAB99C22C9D6329000EC94A /* AnalyticsCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 			);
 			name = PTAnalyticsCoreApp;
 			packageProductDependencies = (
-				2147351D2C10AF13000D0E14 /* PTAnalyticsCore */,
+				6EAB99C12C9D6329000EC94A /* AnalyticsCore */,
 			);
 			productName = PTAnalyticsCoreApp;
 			productReference = 2147350B2C10AEFD000D0E14 /* PTAnalyticsCoreApp.app */;
@@ -117,7 +117,7 @@
 			);
 			mainGroup = 214735022C10AEFD000D0E14;
 			packageReferences = (
-				2147351C2C10AF13000D0E14 /* XCLocalSwiftPackageReference "../.." */,
+				6EAB99C02C9D6329000EC94A /* XCLocalSwiftPackageReference "../../../AnalyticsCore" */,
 			);
 			productRefGroup = 2147350C2C10AEFD000D0E14 /* Products */;
 			projectDirPath = "";
@@ -354,16 +354,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		2147351C2C10AF13000D0E14 /* XCLocalSwiftPackageReference "../.." */ = {
+		6EAB99C02C9D6329000EC94A /* XCLocalSwiftPackageReference "../../../AnalyticsCore" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../..;
+			relativePath = ../../../AnalyticsCore;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2147351D2C10AF13000D0E14 /* PTAnalyticsCore */ = {
+		6EAB99C12C9D6329000EC94A /* AnalyticsCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = PTAnalyticsCore;
+			productName = AnalyticsCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
