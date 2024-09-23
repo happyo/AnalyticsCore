@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import StoreKit
 
 public actor LogEventManager {
     public static let shared = LogEventManager()
@@ -23,5 +24,10 @@ public actor LogEventManager {
     @MainActor
     public func logEvent(name: String, params: [String: Any]? = nil) {
         eventLogger?.logEvent(name: name, params: params)
+    }
+
+    @MainActor
+    public func logTransaction(_ transaction: Transaction) {
+        eventLogger?.logTransaction(transaction)
     }
 }
