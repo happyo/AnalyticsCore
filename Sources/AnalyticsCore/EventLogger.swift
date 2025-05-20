@@ -8,4 +8,5 @@ import StoreKit
 public protocol EventLogger {
     func logEvent(name: String, params: [String: Any]?)
     func logTransaction(_ transaction: Transaction)
+    func logBDA(name: String, params: [String: Any]?)
 }

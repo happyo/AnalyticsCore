@@ -30,4 +30,9 @@ public actor LogEventManager {
     public func logTransaction(_ transaction: Transaction) {
         eventLogger?.logTransaction(transaction)
     }
+
+    @MainActor
+    public func logBDA(name: String, params: [String: Any]? = nil) {
+        eventLogger?.logBDA(name: name, params: params)
+    }
 }
