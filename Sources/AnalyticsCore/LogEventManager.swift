@@ -35,4 +35,14 @@ public actor LogEventManager {
     public func logBDA(name: String, params: [String: Any]? = nil) {
         eventLogger?.logBDA(name: name, params: params)
     }
+
+    @MainActor
+    public func logRegister(params: [String: Any]? = nil) {
+        eventLogger?.logRegister(params: params)
+    }
+
+    @MainActor
+    public func logPaySuccess(params: [String: Any]? = nil) {
+        eventLogger?.logPaySuccess(params: params)
+    }
 }
